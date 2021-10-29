@@ -40,7 +40,7 @@ export default function Home() {
       </main>
 
       <footer>
-        <p>&copy; 2021 I Can Has Cheezburger Token (ICHC Token)</p>
+        <p>&copy; 2021-2022 I Can Has Cheezburger Token (ICHC Token)</p>
       </footer>
 
       <style jsx>{`
