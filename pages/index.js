@@ -24,7 +24,7 @@ export default function Home() {
             <div className="get-ichc-token-container">
               <h2 className="pink">Get ICHC Token</h2>
               <button className="uniswap-btn">
-                <span>Buy on Uniswap</span>
+                <span><a href="https://uniswap.org/" target="_blank">Buy on Uniswap</a></span>
               </button>
             </div>
             <div className="ichc-token-info">
