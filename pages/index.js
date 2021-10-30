@@ -24,13 +24,13 @@ export default function Home() {
             <div className="get-ichc-token-container">
               <h2 className="pink">Get ICHC Token</h2>
               <button className="uniswap-btn">
-                <span><a href="https://uniswap.org/" target="_blank">Buy on Uniswap</a></span>
+                <span><a href="https://app.uniswap.org/#/swap?outputCurrency=0x835bd15a761DDBf4fD44B16dCfd5e67f381A72EB" target="_blank">Buy on Uniswap</a></span>
               </button>
             </div>
             <div className="ichc-token-info">
               <ul>
                 <li>Capped supply of 100 million tokens</li>
-                <li>Block reward of 10 ICHC coins per transaction</li>
+                <li>Block reward of 10 ICHC tokens per transaction</li>
                 <li>Built on top of the Ethereum blockchain</li>
                 {/* <li>Inspired by the classic internet meme</li> */}
               </ul>
