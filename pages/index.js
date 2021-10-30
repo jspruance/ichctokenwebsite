@@ -23,8 +23,11 @@ export default function Home() {
           <div className="ichc-token-info-container">
             <div className="get-ichc-token-container">
               <h2 className="pink">Get ICHC Token</h2>
-              <button className="uniswap-btn">
-                <span><a href="https://app.uniswap.org/#/swap?outputCurrency=0x835bd15a761DDBf4fD44B16dCfd5e67f381A72EB" target="_blank">Buy on Uniswap</a></span>
+              <button 
+                className="uniswap-btn"
+                onClick={() => {window.open('https://app.uniswap.org/#/swap?outputCurrency=0x835bd15a761DDBf4fD44B16dCfd5e67f381A72EB', '_blank')}}
+              >
+                <span>Buy on Uniswap</span>
               </button>
             </div>
             <div className="ichc-token-info">
