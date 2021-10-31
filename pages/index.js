@@ -41,7 +41,10 @@ export default function Home() {
                 <p>
                   <a href="https://etherscan.io/token/0x835bd15a761ddbf4fd44b16dcfd5e67f381a72eb" target="_blank">
                     View on Etherscan
-                  </a>
+                  </a>&nbsp;|&nbsp;
+                  <span className="contact white">
+                    contact: <a href="mailto:crypto@ichctoken.org">crypto@ichctoken.org</a>
+                  </span>
                 </p>
               </div>
             </div>
@@ -148,6 +151,11 @@ export default function Home() {
           text-decoration: none;
         }
 
+        .contact {
+          font-size: 1.7em;
+          font-family: Times,"Times New Roman", serif;
+        }
+
         footer {
           width: 100%;
           height: 100px;
@@ -230,6 +238,10 @@ export default function Home() {
 
         .pink {
           color: #FF007A;
+        }
+
+        .default-font {
+          font-family: Times,"Times New Roman", serif;
         }
 
         body {
