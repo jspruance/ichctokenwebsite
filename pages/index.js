@@ -9,13 +9,17 @@ export default function Home() {
         <link rel="stylesheet" href="/fonts/fonts.css"></link>
         {/* Global site tag (gtag.js) - Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2EF9PKF797"></script>
-        <script>
-          window.dataLayer = window.dataLayer || []
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date())
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || []
+              function gtag(){dataLayer.push(arguments)}
+              gtag('js', new Date())
 
-          gtag('config', 'G-2EF9PKF797')
-        </script>
+              gtag('config', 'G-2EF9PKF797')
+            `,
+          }}
+        />
       </Head>
 
       <main>
@@ -47,14 +51,14 @@ export default function Home() {
                 {/* <li>Inspired by the classic internet meme</li> */}
               </ul>
               <div className="etherscan">
-                <p>
+                <div className="info-bar">
                   <a href="https://etherscan.io/token/0x835bd15a761ddbf4fd44b16dcfd5e67f381a72eb" target="_blank">
                     View on Etherscan
                   </a>&nbsp;|&nbsp;
                   <span className="contact white">
                     contact: <a href="mailto:crypto@ichctoken.org">crypto@ichctoken.org</a>
                   </span>
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -158,6 +162,10 @@ export default function Home() {
 
         .etherscan a:hover {
           text-decoration: none;
+        }
+
+        .info-bar {
+          margin-top: 3em;
         }
 
         .contact {
