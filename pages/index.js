@@ -37,6 +37,13 @@ export default function Home() {
                 <li>Built on top of the Ethereum blockchain</li>
                 {/* <li>Inspired by the classic internet meme</li> */}
               </ul>
+              <div className="etherscan">
+                <p>
+                  <a href="https://etherscan.io/token/0x835bd15a761ddbf4fd44b16dcfd5e67f381a72eb" target="_blank">
+                    View on Etherscan
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -77,7 +84,7 @@ export default function Home() {
           flex-direction: column;
           justify-content: flex-start;
           align-items: center;
-          width: 600px;
+          width: 700px;
         }
 
         .get-ichc-token-container {
@@ -123,6 +130,22 @@ export default function Home() {
           cursor: pointer;
           color: #ffffff;
           background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45-white.png"), #FF007A;
+        }
+
+        .etherscan {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: "press_start_2pregular", Times,"Times New Roman", serif;
+          font-size: .6em;
+        }
+
+        .etherscan a:link {
+          text-decoration: underline;
+        }
+
+        .etherscan a:hover {
+          text-decoration: none;
         }
 
         footer {
