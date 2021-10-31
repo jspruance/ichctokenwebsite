@@ -33,7 +33,7 @@ export default function Home() {
             <div className="ichc-token-info">
               <ul>
                 <li>Capped supply of 100 million tokens</li>
-                <li>Block reward of 10 ICHC tokens per transaction</li>
+                <li>Miner reward paid for each transaction included in the block</li>
                 <li>Built on top of the Ethereum blockchain</li>
                 {/* <li>Inspired by the classic internet meme</li> */}
               </ul>
