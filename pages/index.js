@@ -104,7 +104,7 @@ export default function Home() {
 
         .ichc-token-info ul {
           color: white;
-          font-size: .7em;
+          font-size: .75em;
           line-height: 2.5em;
           margin-top: 5em;
           list-style-type: none;
