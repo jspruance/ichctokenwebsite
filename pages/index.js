@@ -38,7 +38,7 @@ export default function Home() {
               <h2 className="pink">Get ICHC Token</h2>
               <button 
                 className="uniswap-btn"
-                onClick={() => {window.open('https://app.uniswap.org/#/swap?outputCurrency=', '_blank')}}
+                onClick={() => {window.open('https://app.uniswap.org/#/swap?outputCurrency=0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4', '_blank')}}
               >
                 <span>Buy on Uniswap</span>
               </button>
@@ -52,7 +52,7 @@ export default function Home() {
               </ul>
               <div className="etherscan">
                 <div className="info-bar">
-                  <a href="https://etherscan.io/token/" target="_blank">
+                  <a href="https://etherscan.io/token/0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4" target="_blank">
                     View on Etherscan
                   </a>&nbsp;|&nbsp;
                   <span className="contact white">
