@@ -46,7 +46,7 @@ export default function Home() {
             <div className="ichc-token-info">
               <ul>
                 <li>Capped supply of 100 million tokens</li>
-                <li>Block reward of 25 ICHC paid per transaction in mined block</li>
+                <li>Block reward of 25 ICHC per transaction per mined block</li>
                 <li>Built on top of the Ethereum blockchain</li>
                 {/* <li>Inspired by the classic internet meme</li> */}
               </ul>
@@ -100,7 +100,7 @@ export default function Home() {
           flex-direction: column;
           justify-content: flex-start;
           align-items: center;
-          width: 725px;
+          width: 700px;
         }
 
         .get-ichc-token-container {
