@@ -3,8 +3,19 @@ import Header from '../components/Header'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 import web3 from '../ethereum/web3'
+const compiledFaucet = require('../ethereum/contracts/Faucet.json')
 
 export default function Faucet() {
+  const faucetContract = new web3.eth.Contract(
+    compiledFaucet.abi,
+    process.env.FAUCET_CONTRACT_ADDRESS
+  )
+
+  const getICHCHandler = () => {
+    console.log('dripping ICHC from faucet')
+    console.log(process.env.FAUCET_CONTRACT_ADDRESS)
+  }
+
   return (
     <div className="container">
       <Head>
@@ -35,10 +46,10 @@ export default function Faucet() {
           <div className="faucet-container">
             <div className="nes-field">
               <label for="name_field" className="input-label">Enter wallet address here:</label>
-              <input type="text" id="name_field" className="nes-input faucet-txt-input" />{/* <a className="nes-btn faucet-btn" href="#">Get ICHC Token</a> */}
+              <input type="text" id="name_field" className="nes-input faucet-txt-input" />
             </div>
             
-            <button type="button" className="nes-btn is-primary faucet-btn">Get ICHC Token</button>
+            <button onClick={getICHCHandler} type="button" className="nes-btn is-primary faucet-btn">Get ICHC Token</button>
           </div>
           <Menu />
         </div>
@@ -148,6 +159,7 @@ export default function Faucet() {
           margin: 0;
           color: aqua;
           font-family: Times,"Times New Roman", serif;
+          cursor: default !important;
         }
 
         .white {
