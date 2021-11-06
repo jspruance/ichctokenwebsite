@@ -79,7 +79,8 @@ export default function Faucet() {
         }
 
         .input-label {
-          font-size: 1.2em;
+          font-size: .7em;
+          font-family: "press_start_2pregular", Times,"Times New Roman", serif;
         }
 
         .faucet-txt-input {
