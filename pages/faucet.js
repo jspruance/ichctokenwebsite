@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 
 export default function Faucet() {
@@ -9,6 +10,7 @@ export default function Faucet() {
         <title>I Can Has Cheezburger Token</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/fonts/fonts.css"></link>
+        <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
         {/* Global site tag (gtag.js) - Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2EF9PKF797"></script>
         <script
@@ -26,8 +28,17 @@ export default function Faucet() {
 
       <main>
         <Header />
-        <div className="grid">
-          <p>faucet</p>
+        <div className="container">
+          <h2 className="pink">ICHC Token Faucet</h2>
+          <img src="/faucet.png" alt="ICHC Token Faucet" />
+          <div className="faucet-container">
+            <div className="nes-field">
+              <label for="name_field" className="input-label">Enter wallet address here:</label>
+              <input type="text" id="name_field" className="nes-input faucet-txt-input" />{/* <a className="nes-btn faucet-btn" href="#">Get ICHC Token</a> */}
+            </div>
+            
+            <button type="button" className="nes-btn is-primary faucet-btn">Get ICHC Token</button>
+          </div>
           <Menu />
         </div>
       </main>
@@ -36,12 +47,16 @@ export default function Faucet() {
 
       <style jsx>{`
         .container {
-          min-height: 100vh;
           padding: 1rem 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+
+        .container h2 {
+          font-size: 1em;
+          font-family: "press_start_2pregular", Times,"Times New Roman", serif;
         }
 
         main {
@@ -60,16 +75,25 @@ export default function Faucet() {
           justify-content: flex-start;
           align-items: center;
           width: 700px;
+          margin: 3em 0;
+        }
+
+        .input-label {
+          font-size: 1.2em;
+        }
+
+        .faucet-txt-input {
+          width: 700px;
+          font-size: .9em;
+          font-family: "press_start_2pregular", Times,"Times New Roman", serif;
         }
 
         .faucet-btn {
-          height: 55px;
-          width: 275px;
+          margin-top: 2em;
           margin-bottom: 1em;
-          font-weight: bold;
-          font-size: 1.1em;
+          font-size: .8em;
           font-family: "press_start_2pregular", Times,"Times New Roman", serif;
-          background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45.png"), #ffffff;
+          color: black;
         }
 
         .faucet-btn span {
@@ -79,7 +103,6 @@ export default function Faucet() {
         .faucet-btn:hover {
           cursor: pointer;
           color: #ffffff;
-          background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45-white.png"), #FF007A;
         }
 
         a {
