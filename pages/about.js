@@ -35,7 +35,7 @@ export default function About() {
             </div>
             <div className="about-token-info">
               <p>I Can Has Cheezburger Token (ICHC) is a cryptocurrency released on October 29th, 2021 in Palo Alto, California. It is based on the classic intrnet meme which was widely circulated in 2007. The photo of 'Happy Cat' is said to have originated from a Russian cat food ad from the 1990s.</p>
-              <p>ICHC implements the ERC-20 token standard and runs on the Ethereum blockchain. It has a limited, capped supply of 100 million tokens and pays a block reward of 25 ICHC per ICHC transaction in the mined block.</p>
+              <p>ICHC implements the ERC-20 token standard and runs on the Ethereum blockchain. It has a limited, capped supply of 100 million tokens and pays a block reward of 25 ICHC per ICHC transaction in the mined Ethereum block.</p>
               <Menu />
             </div>
           </div>

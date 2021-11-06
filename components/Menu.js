@@ -5,14 +5,20 @@ export default () => {
     <>
       <div className="menu">
         <div className="info-bar">
+          <a href="/" target="_blank">
+            Home
+          </a>&nbsp;|&nbsp;
+          <a href="/faucet" target="_blank">
+            Faucet
+          </a>&nbsp;|&nbsp;
           <a href="https://etherscan.io/token/0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4" target="_blank">
             View on Etherscan
           </a>&nbsp;|&nbsp;
           <a href="/about" target="_blank">
-            About ICHC Token
+            About
           </a>&nbsp;|&nbsp;
           <span className="contact white">
-            contact: <a href="mailto:crypto@ichctoken.org">crypto@ichctoken.org</a>
+            <a href="mailto:crypto@ichctoken.org">crypto@ichctoken.org</a>
           </span>
         </div>
       </div>
