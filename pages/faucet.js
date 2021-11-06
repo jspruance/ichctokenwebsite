@@ -45,7 +45,7 @@ export default function Faucet() {
           <img src="/faucet.png" alt="ICHC Token Faucet" />
           <div className="faucet-container">
             <div className="nes-field">
-              <label for="name_field" className="input-label">Enter wallet address here:</label>
+              <label htmlFor="name_field" className="input-label">Enter wallet address here:</label>
               <input type="text" id="name_field" className="nes-input faucet-txt-input" />
             </div>
             
