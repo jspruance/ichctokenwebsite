@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 
-export default function Home() {
+export default function About() {
   return (
     <div className="container">
       <Head>
@@ -29,23 +29,13 @@ export default function Home() {
         <Header />
         <div className="grid">
           <img src="/cat_main_150.png" alt="I Can Has Cheezburger?" />
-          <div className="ichc-token-info-container">
-            <div className="get-ichc-token-container">
-              <h2 className="pink">Get ICHC Token</h2>
-              <button 
-                className="uniswap-btn"
-                onClick={() => {window.open('https://app.uniswap.org/#/swap?outputCurrency=0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4', '_blank')}}
-              >
-                <span>Buy on Uniswap</span>
-              </button>
+          <div className="about-container">
+            <div className="about-title-container">
+              <h2 className="pink">About ICHC Token</h2>
             </div>
-            <div className="ichc-token-info">
-              <ul>
-                <li>Capped supply of 100 million tokens</li>
-                <li>Block reward of 25 ICHC per transaction per mined block</li>
-                <li>Built on top of the Ethereum blockchain</li>
-                {/* <li>Inspired by the classic internet meme</li> */}
-              </ul>
+            <div className="about-token-info">
+              <p>I Can Has Cheezburger Token (ICHC) is a cryptocurrency released on October 29th, 2021 in Palo Alto, California. It is based on the classic intrnet meme which was widely circulated in 2007. The photo of 'Happy Cat' is said to have originated from a Russian cat food ad from the 1990s.</p>
+              <p>ICHC implements the ERC-20 token standard and runs on the Ethereum blockchain. It has a limited, capped supply of 100 million tokens and pays a block reward of 25 ICHC per ICHC transaction in the mined block.</p>
               <Menu />
             </div>
           </div>
@@ -74,16 +64,21 @@ export default function Home() {
           align-items: center;
         }
 
-        .ichc-token-info-container {
+        .about-container {
           display: flex;
+          padding-left: 35px;
           flex-direction: column;
           justify-content: flex-start;
           align-items: center;
           width: 700px;
         }
 
-        .get-ichc-token-container {
-          margin-left: 3em;
+        .about-token-info p {
+          font-size: 1.2em;
+          line-height: 1.5em;
+        }
+
+        .about-title-container {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -92,44 +87,48 @@ export default function Home() {
           font-family: "press_start_2pregular", Times,"Times New Roman", serif;
         }
 
-        .get-ichc-token-container h2 {
+        .about-title-container h2 {
           font-size: 1.2em;
           font-family: "press_start_2pregular", Times,"Times New Roman", serif;
         }
 
-        .ichc-token-info ul {
-          color: white;
-          font-size: .75em;
-          line-height: 2.5em;
-          margin-top: 5em;
-          list-style-type: none;
-          text-align: center;
-          font-family: "press_start_2pregular", Times,"Times New Roman", serif;
+        .info-bar {
+          margin-top: 3em;
         }
 
-        .uniswap-btn {
-          height: 55px;
-          width: 275px;
-          margin-bottom: 1em;
-          font-weight: bold;
-          font-size: 1.1em;
-          font-family: "press_start_2pregular", Times,"Times New Roman", serif;
-          background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45.png"), #ffffff;
-        }
-
-        .uniswap-btn span {
-          margin-left: 40px;
-        }
-        
-        .uniswap-btn:hover {
-          cursor: pointer;
-          color: #ffffff;
-          background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45-white.png"), #FF007A;
+        .contact {
+          font-size: 1.7em;
+          font-family: Times,"Times New Roman", serif;
         }
 
         a {
           color: inherit;
           text-decoration: none;
+        }
+
+        .title a {
+          color: #0070f3;
+          text-decoration: none;
+        }
+
+        .title a:hover,
+        .title a:focus,
+        .title a:active {
+          text-decoration: underline;
+        }
+
+        .title {
+          margin: 0 .2em;
+          font-size: 3rem;
+        }
+
+        .title,
+        .description {
+          text-align: center;
+        }
+
+        .description {
+          font-size: 1.5rem;
         }
 
         .grid {

@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Header from '../components/Header'
-import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 
-export default function Home() {
+export default function Faucet() {
   return (
     <div className="container">
       <Head>
@@ -28,27 +27,8 @@ export default function Home() {
       <main>
         <Header />
         <div className="grid">
-          <img src="/cat_main_150.png" alt="I Can Has Cheezburger?" />
-          <div className="ichc-token-info-container">
-            <div className="get-ichc-token-container">
-              <h2 className="pink">Get ICHC Token</h2>
-              <button 
-                className="uniswap-btn"
-                onClick={() => {window.open('https://app.uniswap.org/#/swap?outputCurrency=0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4', '_blank')}}
-              >
-                <span>Buy on Uniswap</span>
-              </button>
-            </div>
-            <div className="ichc-token-info">
-              <ul>
-                <li>Capped supply of 100 million tokens</li>
-                <li>Block reward of 25 ICHC per transaction per mined block</li>
-                <li>Built on top of the Ethereum blockchain</li>
-                {/* <li>Inspired by the classic internet meme</li> */}
-              </ul>
-              <Menu />
-            </div>
-          </div>
+          <p>faucet</p>
+          <Menu />
         </div>
       </main>
 
@@ -74,7 +54,7 @@ export default function Home() {
           align-items: center;
         }
 
-        .ichc-token-info-container {
+        .faucet-container {
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
@@ -82,32 +62,7 @@ export default function Home() {
           width: 700px;
         }
 
-        .get-ichc-token-container {
-          margin-left: 3em;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          color: white;
-          font-size: .7em;
-          font-family: "press_start_2pregular", Times,"Times New Roman", serif;
-        }
-
-        .get-ichc-token-container h2 {
-          font-size: 1.2em;
-          font-family: "press_start_2pregular", Times,"Times New Roman", serif;
-        }
-
-        .ichc-token-info ul {
-          color: white;
-          font-size: .75em;
-          line-height: 2.5em;
-          margin-top: 5em;
-          list-style-type: none;
-          text-align: center;
-          font-family: "press_start_2pregular", Times,"Times New Roman", serif;
-        }
-
-        .uniswap-btn {
+        .faucet-btn {
           height: 55px;
           width: 275px;
           margin-bottom: 1em;
@@ -117,11 +72,11 @@ export default function Home() {
           background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45.png"), #ffffff;
         }
 
-        .uniswap-btn span {
+        .faucet-btn span {
           margin-left: 40px;
         }
         
-        .uniswap-btn:hover {
+        .faucet-btn:hover {
           cursor: pointer;
           color: #ffffff;
           background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45-white.png"), #FF007A;
@@ -130,6 +85,17 @@ export default function Home() {
         a {
           color: inherit;
           text-decoration: none;
+        }
+
+        .title a {
+          color: #0070f3;
+          text-decoration: none;
+        }
+
+        .title a:hover,
+        .title a:focus,
+        .title a:active {
+          text-decoration: underline;
         }
 
         .grid {
