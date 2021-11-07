@@ -41,10 +41,10 @@ export default function Faucet() {
         <Header />
         <div className="container">
           <h2 className="pink">ICHC Token Faucet</h2>
-          <img src="/faucet.png" alt="ICHC Token Faucet" />
+          <img src="/faucet_med.png" alt="ICHC Token Faucet" />
           <div className="faucet-container">
             <div className="nes-field">
-              <label htmlFor="name_field" className="input-label">Enter wallet address here:</label>
+              <label htmlFor="name_field" className="input-label">Enter wallet address:</label>
               <input type="text" id="name_field" className="nes-input faucet-txt-input" />
             </div>
             
@@ -70,6 +70,10 @@ export default function Faucet() {
           font-family: "press_start_2pregular", Times,"Times New Roman", serif;
         }
 
+        .container img {
+          margin-top: 1em;
+        }
+
         main {
           padding: 0 0;
           margin: 0 0 5rem 0;
@@ -86,7 +90,7 @@ export default function Faucet() {
           justify-content: flex-start;
           align-items: center;
           width: 700px;
-          margin: 3em 0;
+          margin: 1em 0;
         }
 
         .input-label {
