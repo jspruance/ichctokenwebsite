@@ -6,14 +6,13 @@ import web3 from '../ethereum/web3'
 const compiledFaucet = require('../ethereum/contracts/Faucet.json')
 
 export default function Faucet() {
-  const faucetContract = new web3.eth.Contract(
-    compiledFaucet.abi,
-    process.env.FAUCET_CONTRACT_ADDRESS
-  )
+  // const faucetContract = new web3.eth.Contract(
+  //   compiledFaucet.abi,
+  //   process.env.FAUCET_CONTRACT_ADDRESS
+  // )
 
   const getICHCHandler = () => {
     console.log('dripping ICHC from faucet')
-    console.log(process.env.FAUCET_CONTRACT_ADDRESS)
   }
 
   return (
