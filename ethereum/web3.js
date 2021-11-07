@@ -1,6 +1,6 @@
-// import Web3 from "web3";
+import Web3 from "web3";
  
-// let web3;
+let web3;
  
 // if (typeof window !== "undefined" && typeof window.ethereum !== "undefined") {
 //   // We are in the browser and metamask is running.
@@ -14,4 +14,4 @@
 //   web3 = new Web3(provider);
 // }
  
-// export default web3;
+export default web3;
