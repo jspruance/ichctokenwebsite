@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
+import Web3 from "web3"
 // import web3 from '../ethereum/web3'
 // const compiledFaucet = require('../ethereum/contracts/Faucet.json')
 
