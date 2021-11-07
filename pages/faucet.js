@@ -188,4 +188,7 @@ export default function Faucet() {
       `}</style>
     </div>
   )
+
+  export async function getServerSideProps() {
+  }
 }
