@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 import web3 from '../ethereum/web3'
-// const compiledFaucet = require('../ethereum/contracts/Faucet.json')
+const compiledFaucet = require('../ethereum/contracts/Faucet.json')
 
 export default function Faucet() {
   // const faucetContract = new web3.eth.Contract(
