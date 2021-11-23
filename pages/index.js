@@ -43,7 +43,7 @@ export default function Home() {
               <ul>
                 <li>Capped supply of 100 million tokens</li>
                 <li>Block reward of 25 ICHC per transaction per mined block</li>
-                <li>Built on top of the Ethereum blockchain</li>
+                <li>Running on the Ethereum blockchain</li>
               </ul>
               <Menu />
             </div>
