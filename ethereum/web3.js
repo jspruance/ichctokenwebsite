@@ -1,6 +1,6 @@
-import Web3 from "web3";
+let Web3 = require('web3')
  
-let web3;
+let web3
  
 if (typeof window !== "undefined" && typeof window.ethereum !== "undefined") {
   // We are in the browser and metamask is running.
@@ -16,4 +16,4 @@ if (typeof window !== "undefined" && typeof window.ethereum !== "undefined") {
   web3 = {}
 }
  
-export default web3;
+export default web3
