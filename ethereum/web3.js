@@ -1,4 +1,4 @@
-let Web3 = require('web3')
+import Web3 from "web3"
  
 let web3
  
