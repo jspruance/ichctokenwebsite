@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Menu from '../components/Menu'
@@ -5,13 +6,17 @@ import Footer from '../components/Footer'
 import faucetContract from '../ethereum/faucet'
 
 export default function Faucet() {
+  const [withdrawError, setWithdrawError] = useState('')
+
   const getICHCHandler = async() => {
+    setWithdrawError('')
     console.log('dripping ICHC from faucet')
     const balance = await faucetContract.methods.getBalance().call()
     try {
       const resp = await faucetContract.methods.withdraw().call()
     } catch(err) {
       console.log(`error :::: ${err.message}`)
+      setWithdrawError(err.message)
     }
     
     console.log(`balance :::: ${balance}`)
@@ -53,6 +58,9 @@ export default function Faucet() {
             
             <button onClick={getICHCHandler} type="button" className="nes-btn is-primary faucet-btn">Get ICHC Token</button>
           </div>
+          {
+            withdrawError && <span className="nes-text is-error">{withdrawError}</span>
+          }
           <Menu />
         </div>
       </main>
