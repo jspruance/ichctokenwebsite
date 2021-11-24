@@ -1,13 +1,16 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default props => {
   return (
     <>
-      <div className="header-container">
-        <img src="/coin.gif" width="80px" alt="ICHC Token" />
-        <h1 className="title">I Can Has Cheezburger Token</h1>
-        <img src="/coin.gif" width="80px" alt="ICHC Token" />
-      </div>
+      <Link href="/">
+        <div className="header-container">
+          <img src="/coin.gif" width="80px" alt="ICHC Token" />
+          <h1 className="title">I Can Has Cheezburger Token</h1>
+          <img src="/coin.gif" width="80px" alt="ICHC Token" />
+        </div>
+      </Link>
       {
         !props.minimal && <p className="description">
           A peer-to-peer electronic cash system

@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
+import web3 from '../ethereum/web3'
 import faucetContract from '../ethereum/faucet'
 
 export default function Faucet() {
