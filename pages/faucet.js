@@ -16,6 +16,8 @@ export default function Faucet() {
     const balance = await faucetContract.methods.getBalance().call()
     let resp
     try {
+      const accounts = await web3.eth.getAccounts()
+      console.log(`this account :::: ${accounts[0]}`)
       resp = await faucetContract.methods.withdraw().call()
       setWithdrawSuccess('Operation succeeded - enjoy your tokens!')
     } catch(err) {
