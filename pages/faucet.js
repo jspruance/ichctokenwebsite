@@ -23,6 +23,7 @@ export default function Faucet() {
     try {
       const accounts = await web3.eth.getAccounts()
       const recipient = recipientAddress ? recipientAddress : accounts[0]
+      console.log(`recipient :::: ${recipient}`)
       resp = await faucetContract.methods.withdraw().send({
         from: recipient,
       })
