@@ -9,6 +9,11 @@ import faucetContract from '../ethereum/faucet'
 export default function Faucet() {
   const [withdrawError, setWithdrawError] = useState('')
   const [withdrawSuccess, setWithdrawSuccess] = useState('')
+  const [recipientAddress, setRecipientAddress] = useState('')
+
+  const addressUpdateHandler = (event) => {
+    setRecipientAddress(event.target.value)
+  }
 
   const getICHCHandler = async() => {
     setWithdrawError('')
@@ -17,8 +22,9 @@ export default function Faucet() {
     let resp
     try {
       const accounts = await web3.eth.getAccounts()
+      const recipient = recipientAddress ? recipientAddress : accounts[0]
       resp = await faucetContract.methods.withdraw().send({
-        from: accounts[0],
+        from: recipient,
       })
       setWithdrawSuccess('Operation succeeded - enjoy your tokens!')
       balance = await faucetContract.methods.getBalance().call()
@@ -69,7 +75,12 @@ export default function Faucet() {
               <div className="or"> - OR - </div>
               <div className="nes-field">
                 <label htmlFor="name_field" className="input-label">Enter wallet address:</label>
-                <input type="text" id="name_field" className="nes-input faucet-txt-input" />
+                <input 
+                  type="text" 
+                  id="name_field" 
+                  className="nes-input faucet-txt-input" 
+                  onChange={addressUpdateHandler}
+                />
               </div>
               
               <button onClick={getICHCHandler} type="button" className="nes-btn is-primary faucet-btn">Get ICHC Token</button>
