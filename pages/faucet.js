@@ -7,7 +7,6 @@ import faucetContract from '../ethereum/faucet'
 export default function Faucet() {
   const getICHCHandler = async() => {
     console.log('dripping ICHC from faucet')
-    console.log(`faucetContract :::: ${JSON.stringify(faucetContract)}`)
     const balance = await faucetContract.methods.getBalance().call()
     console.log(`balance :::: ${balance}`)
   }
