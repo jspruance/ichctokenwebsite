@@ -66,6 +66,7 @@ export default function Faucet() {
                 onClick={() => {console.log('connect...')}}
               ><span>Connect to MetaMask wallet</span>
               </button>
+              <div className="or"> -OR- </div>
               <div className="nes-field">
                 <label htmlFor="name_field" className="input-label">Enter wallet address:</label>
                 <input type="text" id="name_field" className="nes-input faucet-txt-input" />
