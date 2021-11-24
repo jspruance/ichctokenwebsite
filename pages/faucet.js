@@ -9,11 +9,11 @@ import faucetContract from '../ethereum/faucet'
 export default function Faucet() {
   const [withdrawError, setWithdrawError] = useState('')
   const [withdrawSuccess, setWithdrawSuccess] = useState('')
-  const [recipientAddress, setRecipientAddress] = useState('')
+  // const [recipientAddress, setRecipientAddress] = useState('')
 
-  const addressUpdateHandler = (event) => {
-    setRecipientAddress(event.target.value)
-  }
+  // const addressUpdateHandler = (event) => {
+  //   setRecipientAddress(event.target.value)
+  // }
 
   const getICHCHandler = async() => {
     setWithdrawError('')
@@ -22,10 +22,8 @@ export default function Faucet() {
     let resp
     try {
       const accounts = await web3.eth.getAccounts()
-      const recipient = recipientAddress ? recipientAddress : accounts[0]
-      console.log(`recipient :::: ${accounts[0]}`)
       resp = await faucetContract.methods.withdraw().send({
-        from: recipient,
+        from: accounts[0],
       })
       setWithdrawSuccess('Operation succeeded - enjoy your tokens!')
       balance = await faucetContract.methods.getBalance().call()
@@ -65,10 +63,10 @@ export default function Faucet() {
           <h2 className="pink">ICHC Token Faucet</h2>
 
           <div className="faucet-container">
-            <img src="/faucet_med.png" alt="ICHC Token Faucet" />
-
+            
             <div className="address-entry">
-              <button 
+              <img src="/faucet_med.png" alt="ICHC Token Faucet" />
+              {/* <button 
                 className="metamask-btn"
                 onClick={() => {console.log('connect...')}}
               ><span>Connect to MetaMask</span>
@@ -82,7 +80,7 @@ export default function Faucet() {
                   className="nes-input faucet-txt-input" 
                   onChange={addressUpdateHandler}
                 />
-              </div>
+              </div> */}
               
               <button onClick={getICHCHandler} type="button" className="nes-btn is-primary faucet-btn">Get ICHC Token</button>
             </div>
