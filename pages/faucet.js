@@ -223,7 +223,7 @@ export default function Faucet() {
           cursor: default !important;
         }
 
-        a {
+        a, button {
           cursor: pointer !important;
         }
 
