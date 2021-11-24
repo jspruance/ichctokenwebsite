@@ -163,7 +163,7 @@ export default function Faucet() {
           font-weight: bold;
           font-size: .7em;
           font-family: "press_start_2pregular", Times,"Times New Roman", serif;
-          background: top 2px left 5px no-repeat url("/metamask_logo_45.png"), #ffffff;
+          background: top 2px left 5px no-repeat url("/mm_logo_45.png"), #ffffff;
           cursor: pointer !important;
         }
 
@@ -174,7 +174,7 @@ export default function Faucet() {
         .metamask-btn:hover {
           cursor: pointer;
           color: #ffffff;
-          background: top 2px left 5px no-repeat url("/metamask_logo_45_tr.png"), #FF007A;
+          background-color: #FF007A;
         }
 
         .faucet-btn {
