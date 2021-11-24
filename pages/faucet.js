@@ -59,7 +59,7 @@ export default function Faucet() {
             <button onClick={getICHCHandler} type="button" className="nes-btn is-primary faucet-btn">Get ICHC Token</button>
           </div>
           {
-            withdrawError && <span className="nes-text is-error">{withdrawError}</span>
+            withdrawError && <div className="withdraw-error">{withdrawError}</div>
           }
           <Menu />
         </div>
@@ -112,6 +112,11 @@ export default function Faucet() {
           width: 700px;
           font-size: .9em;
           font-family: "press_start_2pregular", Times,"Times New Roman", serif;
+        }
+
+        .withdraw-error {
+          color: red;
+          width: 700px;
         }
 
         .faucet-btn {
