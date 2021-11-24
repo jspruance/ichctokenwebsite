@@ -11,7 +11,7 @@ export default function Faucet() {
     try {
       const resp = await faucetContract.methods.withdraw().call()
     } catch(err) {
-      console.log(`error :::: ${err}`)
+      console.log(`error :::: ${err.message}`)
     }
     
     console.log(`balance :::: ${balance}`)
