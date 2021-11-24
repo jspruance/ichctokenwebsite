@@ -105,6 +105,10 @@ export default function Faucet() {
           margin-top: 1em;
         }
 
+        .or {
+          margin: 1em 0;
+        }
+
         main {
           padding: 0 0;
           margin: 0 0 5rem 0;
@@ -120,7 +124,7 @@ export default function Faucet() {
           flex-direction: row;
           justify-content: flex-start;
           align-items: center;
-          margin: 2em 0;
+          margin: 3em 0;
         }
 
         .address-entry {
