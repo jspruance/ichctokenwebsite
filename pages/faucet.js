@@ -167,6 +167,16 @@ export default function Faucet() {
           cursor: pointer !important;
         }
 
+        .metamask-btn span {
+          margin-left: 40px;
+        }
+        
+        .metamask-btn:hover {
+          cursor: pointer;
+          color: #ffffff;
+          background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45-white.png"), #FF007A;
+        }
+
         .faucet-btn {
           margin-left: 1em;
           margin-top: 2em;
