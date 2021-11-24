@@ -14,15 +14,16 @@ export default function Faucet() {
     setWithdrawError('')
     setWithdrawSuccess('')
     console.log('dripping ICHC from faucet')
-    const balance = await faucetContract.methods.getBalance().call()
+    let balance
     let resp
     try {
       const accounts = await web3.eth.getAccounts()
-      console.log(`this account :::: ${accounts[0]}`)
-      resp = await faucetContract.methods.withdraw().call()
+      resp = await faucetContract.methods.withdraw().send({
+        from: accounts[0],
+      })
       setWithdrawSuccess('Operation succeeded - enjoy your tokens!')
+      balance = await faucetContract.methods.getBalance().call()
     } catch(err) {
-      console.log(`error :::: ${err.message}`)
       setWithdrawError(err.message)
     }
     
