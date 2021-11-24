@@ -64,7 +64,7 @@ export default function Faucet() {
               <button 
                 className="metamask-btn"
                 onClick={() => {console.log('connect...')}}
-              ><span>Connect to MetaMask wallet</span>
+              ><span>Connect to MetaMask</span>
               </button>
               <div className="or"> -OR- </div>
               <div className="nes-field">
