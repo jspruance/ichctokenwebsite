@@ -174,7 +174,7 @@ export default function Faucet() {
         .metamask-btn:hover {
           cursor: pointer;
           color: #ffffff;
-          background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45-white.png"), #FF007A;
+          background: top 0px left 5px no-repeat url("/metamask_logo_45_tr.png"), #FF007A;
         }
 
         .faucet-btn {
