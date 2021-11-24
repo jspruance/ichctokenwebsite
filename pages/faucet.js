@@ -162,6 +162,10 @@ export default function Faucet({faucetContract}) {
           cursor: default !important;
         }
 
+        a {
+          cursor: default !important;
+        }
+
         .white {
           color: #FFFFFF;
         }
