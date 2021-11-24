@@ -7,13 +7,17 @@ import faucetContract from '../ethereum/faucet'
 
 export default function Faucet() {
   const [withdrawError, setWithdrawError] = useState('')
+  const [withdrawSuccess, setWithdrawSuccess] = useState('')
 
   const getICHCHandler = async() => {
     setWithdrawError('')
+    setWithdrawSuccess('')
     console.log('dripping ICHC from faucet')
     const balance = await faucetContract.methods.getBalance().call()
+    let resp
     try {
-      const resp = await faucetContract.methods.withdraw().call()
+      resp = await faucetContract.methods.withdraw().call()
+      setWithdrawSuccess('Operation succeeded - enjoy your tokens!')
     } catch(err) {
       console.log(`error :::: ${err.message}`)
       setWithdrawError(err.message)
@@ -60,6 +64,9 @@ export default function Faucet() {
           </div>
           {
             withdrawError && <div className="withdraw-error">{withdrawError}</div>
+          }
+          {
+            withdrawSuccess && <div className="withdraw-success">{withdrawSuccess}</div> 
           }
           <Menu />
         </div>
@@ -116,6 +123,11 @@ export default function Faucet() {
 
         .withdraw-error {
           color: red;
+          max-width: 900px;
+        }
+
+        .withdraw-success {
+          color: green;
           max-width: 900px;
         }
 
