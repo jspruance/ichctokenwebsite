@@ -153,7 +153,7 @@ export default function Faucet() {
 
         .metamask-btn {
           height: 55px;
-          width: 275px;
+          width: 325px;
           margin-bottom: 1em;
           font-weight: bold;
           font-size: .7em;
