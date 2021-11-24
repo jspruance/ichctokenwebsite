@@ -41,7 +41,7 @@ export default function Faucet() {
       </Head>
 
       <main>
-        <Header />
+        <Header minimal={true} />
         <div className="container">
           <h2 className="pink">ICHC Token Faucet</h2>
           <img src="/faucet_med.png" alt="ICHC Token Faucet" />

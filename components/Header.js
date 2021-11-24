@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default () => {
+export default props => {
   return (
     <>
       <div className="header-container">
@@ -8,9 +8,11 @@ export default () => {
         <h1 className="title">I Can Has Cheezburger Token</h1>
         <img src="/coin.gif" width="80px" alt="ICHC Token" />
       </div>
-      <p className="description">
-        A peer-to-peer electronic cash system
-      </p>
+      {
+        !props.minimal && <p className="description">
+          A peer-to-peer electronic cash system
+        </p>
+      }
     <style jsx>{`
     .header-container {
       display: flex;
