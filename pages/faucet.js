@@ -163,7 +163,7 @@ export default function Faucet({faucetContract}) {
         }
 
         a {
-          cursor: default !important;
+          cursor: pointer !important;
         }
 
         .white {
