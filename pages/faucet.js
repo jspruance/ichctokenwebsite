@@ -156,7 +156,7 @@ export default function Faucet() {
           width: 275px;
           margin-bottom: 1em;
           font-weight: bold;
-          font-size: 1.1em;
+          font-size: .7em;
           font-family: "press_start_2pregular", Times,"Times New Roman", serif;
           background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45.png"), #ffffff;
         }
