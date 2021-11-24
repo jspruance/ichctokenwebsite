@@ -158,7 +158,7 @@ export default function Faucet() {
           font-weight: bold;
           font-size: .7em;
           font-family: "press_start_2pregular", Times,"Times New Roman", serif;
-          background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45.png"), #ffffff;
+          background: top 0px left 5px no-repeat url("/metamask_logo_45.png"), #ffffff;
         }
 
         .faucet-btn {
