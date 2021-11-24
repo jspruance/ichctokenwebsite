@@ -89,10 +89,9 @@ export default function Faucet() {
 
         .faucet-container {
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           justify-content: flex-start;
           align-items: center;
-          width: 700px;
           margin: 1em 0;
         }
 
@@ -108,6 +107,7 @@ export default function Faucet() {
         }
 
         .faucet-btn {
+          margin-left: 1em;
           margin-top: 2em;
           margin-bottom: 1em;
           font-size: .8em;
