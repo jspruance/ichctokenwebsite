@@ -9,7 +9,8 @@ export default function Faucet({faucetContract}) {
   const getICHCHandler = async() => {
     console.log('dripping ICHC from faucet')
     console.log(`faucetContract :::: ${JSON.stringify(faucetContract)}`)
-    // console.log(`balance ::: ${balance}`)
+    const balance = await faucetContract.methods.getBalance.call()
+    console.log(`balance :::: ${balance}`)
   }
 
   return (
