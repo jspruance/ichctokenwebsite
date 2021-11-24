@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "compile": "solcjs --abi --include-path node_modules/ --base-path . ethereum/contracts/Faucet.sol --output-dir ethereum/build"
+    "compile": "solcjs --standard-json --include-path node_modules/ --base-path . ethereum/contracts/Faucet.sol --output-dir ethereum/build"
   },
   "dependencies": {
     "next": "^11.0.0",
