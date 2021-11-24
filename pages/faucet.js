@@ -134,7 +134,7 @@ export default function Faucet() {
           flex-direction: row;
           justify-content: flex-start;
           align-items: center;
-          margin: 4em 0;
+          margin: 2em 0;
         }
 
         .address-entry {
