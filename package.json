@@ -5,12 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "compile": "solcjs --abi --include-path node_modules/ --base-path . ethereum/contracts/Faucet.sol --output-dir ethereum/build"
   },
   "dependencies": {
     "next": "^11.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "solc": "^0.8.10",
     "web3": "^1.6.0"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.3.2"
   }
 }
