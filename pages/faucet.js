@@ -6,8 +6,10 @@ import web3 from '../ethereum/web3'
 const compiledFaucet = require('../ethereum/contracts/Faucet.json')
 
 export default function Faucet({faucetContract}) {
-  const getICHCHandler = () => {
+  const getICHCHandler = async() => {
     console.log('dripping ICHC from faucet')
+    const balance = await faucetContract.methods.getBalance().call()
+    console.log(`balance ::: ${balance}`)
   }
 
   return (
