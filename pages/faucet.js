@@ -13,7 +13,6 @@ export default function Faucet() {
   const getICHCHandler = async() => {
     setWithdrawError('')
     setWithdrawSuccess('')
-    console.log('dripping ICHC from faucet')
     let balance
     let resp
     try {

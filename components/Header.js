@@ -21,6 +21,7 @@ export default props => {
       display: flex;
       flex-direction: row;
       align-items: center;
+      cursor: pointer;
     }
 
     .title {
