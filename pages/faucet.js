@@ -2,10 +2,9 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
-import web3 from '../ethereum/web3'
-const compiledFaucet = require('../ethereum/contracts/Faucet.json')
+import faucetContract from '../ethereum/faucet'
 
-export default function Faucet({faucetContract}) {
+export default function Faucet() {
   const getICHCHandler = async() => {
     console.log('dripping ICHC from faucet')
     console.log(`faucetContract :::: ${JSON.stringify(faucetContract)}`)
@@ -189,12 +188,4 @@ export default function Faucet({faucetContract}) {
       `}</style>
     </div>
   )
-}
-
-export async function getServerSideProps() {
-  const faucetContract = new web3.eth.Contract(
-    compiledFaucet.abi,
-    "0x4099E633A607F6ED211e2c82565003d6F755e75e"
-  )
-  return { props: { faucetContract } }
 }
