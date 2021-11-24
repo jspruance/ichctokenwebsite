@@ -168,7 +168,7 @@ export default function Faucet() {
         }
 
         .metamask-btn span {
-          margin-left: 55px;
+          margin-left: 52px;
         }
         
         .metamask-btn:hover {
