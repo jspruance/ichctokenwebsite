@@ -61,6 +61,11 @@ export default function Faucet() {
             <img src="/faucet_med.png" alt="ICHC Token Faucet" />
 
             <div className="address-entry">
+              <button 
+                className="metamask-btn"
+                onClick={() => {console.log('connect...')}}
+              ><span>Connect to MetaMask wallet</span>
+              </button>
               <div className="nes-field">
                 <label htmlFor="name_field" className="input-label">Enter wallet address:</label>
                 <input type="text" id="name_field" className="nes-input faucet-txt-input" />
@@ -122,6 +127,7 @@ export default function Faucet() {
           flex-direction: column;
           justify-content: flex-start;
           align-items: center;
+          margin-left: 2em;
         }
 
         .input-label {
@@ -143,6 +149,16 @@ export default function Faucet() {
         .withdraw-success {
           color: green;
           max-width: 900px;
+        }
+
+        .metamask-btn {
+          height: 55px;
+          width: 275px;
+          margin-bottom: 1em;
+          font-weight: bold;
+          font-size: 1.1em;
+          font-family: "press_start_2pregular", Times,"Times New Roman", serif;
+          background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45.png"), #ffffff;
         }
 
         .faucet-btn {
