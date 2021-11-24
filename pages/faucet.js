@@ -56,21 +56,25 @@ export default function Faucet() {
         <Header minimal={true} />
         <div className="container">
           <h2 className="pink">ICHC Token Faucet</h2>
-          <img src="/faucet_med.png" alt="ICHC Token Faucet" />
+
           <div className="faucet-container">
-            <div className="nes-field">
-              <label htmlFor="name_field" className="input-label">Enter wallet address:</label>
-              <input type="text" id="name_field" className="nes-input faucet-txt-input" />
+            <img src="/faucet_med.png" alt="ICHC Token Faucet" />
+
+            <div className="address-entry">
+              <div className="nes-field">
+                <label htmlFor="name_field" className="input-label">Enter wallet address:</label>
+                <input type="text" id="name_field" className="nes-input faucet-txt-input" />
+              </div>
+              
+              <button onClick={getICHCHandler} type="button" className="nes-btn is-primary faucet-btn">Get ICHC Token</button>
             </div>
-            
-            <button onClick={getICHCHandler} type="button" className="nes-btn is-primary faucet-btn">Get ICHC Token</button>
           </div>
           {
             withdrawError && <div className="withdraw-error">{withdrawError}</div>
           }
           {
             withdrawSuccess && <div className="withdraw-success">{withdrawSuccess}</div> 
-          }
+          } 
           <Menu />
         </div>
       </main>
@@ -111,6 +115,13 @@ export default function Faucet() {
           justify-content: flex-start;
           align-items: center;
           margin: 1em 0;
+        }
+
+        .address-entry {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
         }
 
         .input-label {
