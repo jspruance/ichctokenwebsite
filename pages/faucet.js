@@ -8,8 +8,8 @@ const compiledFaucet = require('../ethereum/contracts/Faucet.json')
 export default function Faucet({faucetContract}) {
   const getICHCHandler = async() => {
     console.log('dripping ICHC from faucet')
-    const balance = await faucetContract.methods.getBalance().call()
-    console.log(`balance ::: ${balance}`)
+    console.log(`faucetContract :::: JSON.stringify(faucetContract)`)
+    // console.log(`balance ::: ${balance}`)
   }
 
   return (
