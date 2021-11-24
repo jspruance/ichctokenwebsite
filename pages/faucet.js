@@ -15,12 +15,12 @@ export default function Faucet() {
     try {
       const resp = await faucetContract.methods.withdraw().call()
     } catch(err) {
-      console.log(`error :::: ${err}`)
+      console.log(`error :::: ${err.message}`)
       setWithdrawError(err.message)
     }
     
     console.log(`balance :::: ${balance}`)
-    console.log(`withdraw resp :::: ${resp}`)
+    if (resp) console.log(`withdraw resp :::: ${resp}`)
   }
 
   return (
@@ -116,7 +116,7 @@ export default function Faucet() {
 
         .withdraw-error {
           color: red;
-          width: 700px;
+          max-width: 900px;
         }
 
         .faucet-btn {
