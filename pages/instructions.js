@@ -116,8 +116,10 @@ export default function Instructions() {
         .faucet-btn {
             height: 55px;
             width: 275px;
+            margin-top: 1em;
             margin-left: 1.5em;
             margin-bottom: 1em;
+            font-size: .8em;
             font-weight: bold;
             font-family: "press_start_2pregular", Times,"Times New Roman", serif;
             background: top 0px left 5px no-repeat url("/faucet-45.png"), #ffffff;
