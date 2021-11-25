@@ -9,6 +9,11 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>I Can Has Cheezburger Token</title>
+        <meta name="description" content="I Can Has Cheezburger Token: A peer-to-peer electronic cash system" />
+        <meta property="og:title" content="I Can Has Cheezburger Token" />
+        <meta property="og:description" content="I Can Has Cheezburger Token: A peer-to-peer electronic cash system" />
+        <meta property="og:url" content="https://www.ichctoken.org/" />
+        <meta property="og:type" content="website"></meta>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/fonts/fonts.css"></link>
         {/* Global site tag (gtag.js) - Google Analytics */}
