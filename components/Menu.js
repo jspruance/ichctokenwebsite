@@ -6,20 +6,20 @@ export default () => {
     <>
       <div className="menu">
         <div className="info-bar">
-          <Link href="/">
+          <Link href="/" className="menu-link" >
             Home
           </Link>&nbsp;|&nbsp;
-          <Link href="/faucet">
+          <Link href="/faucet" className="menu-link" >
             Faucet
           </Link>&nbsp;|&nbsp;
-          <Link href="https://etherscan.io/token/0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4">
+          <Link href="https://etherscan.io/token/0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4" className="menu-link" >
             View on Etherscan
           </Link>&nbsp;|&nbsp;
-          <Link href="/about">
+          <Link href="/about" className="menu-link" >
             About
           </Link>&nbsp;|&nbsp;
           <span className="contact white">
-            <Link href="mailto:crypto@ichctoken.org">crypto@ichctoken.org</Link>
+            <Link href="mailto:crypto@ichctoken.org" className="menu-link" >crypto@ichctoken.org</Link>
           </span>
         </div>
       </div>
@@ -33,16 +33,16 @@ export default () => {
       font-size: .6em;
     }
 
-    a {
+    .menu-link, a  {
       color: inherit;
       text-decoration: none;
     }
 
-    .menu a:link {
+    .menu a:link, .menu .menu-link:link, {
       text-decoration: underline;
     }
 
-    .menu a:hover {
+    .menu a:hover, .menu .menu-link:hover {
       text-decoration: none;
     }
 
