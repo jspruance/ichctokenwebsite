@@ -88,6 +88,11 @@ export default function Faucet() {
                 className="nes-btn is-primary faucet-btn">
                   Get ICHC Tokens
               </button>
+              <div className="instructions">
+                <Link href="/instructions">
+                  <a>Step-by-step instructions</a>
+                </Link>
+              </div>
             </div>
           </div>
           {
