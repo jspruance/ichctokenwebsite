@@ -78,6 +78,11 @@ export default function Instructions() {
           margin: 2em 0 0 0;
           color: white;
           font-size: 1.1em;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
 
         .faucet-instructions ol {
