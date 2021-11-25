@@ -136,7 +136,7 @@ export default function Home() {
         .uniswap-btn:hover {
           cursor: pointer;
           color: #ffffff;
-          background: top 0px left 50px no-repeat url("/uniswap-uni-logo-45-sprite.png"), #FF007A;
+          background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45-sprite.png"), #FF007A;
         }
 
         .faucet-btn {
