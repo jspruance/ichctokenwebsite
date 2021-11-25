@@ -83,6 +83,10 @@ export default function Instructions() {
           text-decoration: underline;
         }
 
+        .faucet-instructions a:hover {
+            text-decoration: none;
+          }
+
         main {
           padding: 0 0;
           margin: 0 0 5rem 0;
