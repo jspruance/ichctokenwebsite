@@ -1,24 +1,25 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default () => {
   return (
     <>
       <div className="menu">
         <div className="info-bar">
-          <a href="/" target="_blank">
+          <Link href="/">
             Home
-          </a>&nbsp;|&nbsp;
-          <a href="/faucet" target="_blank">
+          </Link>&nbsp;|&nbsp;
+          <Link href="/faucet">
             Faucet
-          </a>&nbsp;|&nbsp;
-          <a href="https://etherscan.io/token/0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4" target="_blank">
+          </Link>&nbsp;|&nbsp;
+          <Link href="https://etherscan.io/token/0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4">
             View on Etherscan
-          </a>&nbsp;|&nbsp;
-          <a href="/about" target="_blank">
+          </Link>&nbsp;|&nbsp;
+          <Link href="/about">
             About
-          </a>&nbsp;|&nbsp;
+          </Link>&nbsp;|&nbsp;
           <span className="contact white">
-            <a href="mailto:crypto@ichctoken.org">crypto@ichctoken.org</a>
+            <Link href="mailto:crypto@ichctoken.org">crypto@ichctoken.org</Link>
           </span>
         </div>
       </div>
