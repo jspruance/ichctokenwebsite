@@ -117,7 +117,7 @@ export default function Faucet() {
         }
 
         .container img {
-          margin-top: 1em;
+          margin-bottom: 1em;
         }
 
         .or {
@@ -147,7 +147,7 @@ export default function Faucet() {
           flex-direction: column;
           justify-content: flex-start;
           align-items: center;
-          margin-left: 2em;
+          xmargin-left: 2em;
         }
 
         .input-label {
