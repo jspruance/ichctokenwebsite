@@ -75,7 +75,12 @@ export default function Instructions() {
         }
 
         .faucet-instructions ol {
-            
+          line-height: 1.7;
+        }
+
+        .faucet-instructions a {
+          color: aqua;
+          text-decoration: underline;
         }
 
         main {
