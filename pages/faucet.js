@@ -5,6 +5,7 @@ import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 import web3 from '../ethereum/web3'
 import faucetContract from '../ethereum/faucet'
+import Link from 'next/link'
 
 export default function Faucet() {
   const [withdrawError, setWithdrawError] = useState('')
