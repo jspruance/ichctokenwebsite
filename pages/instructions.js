@@ -40,7 +40,7 @@ export default function Instructions() {
                   <li>Click on the 'Get ICHC Tokens' button on the faucet page.</li>
                   <li>You will be prompted to accept the transaction, including any Ethereum gas fees.</li>
                   <li>Once accepted, your new ICHC tokens will be transferred to your MetaMask wallet.</li>
-                  <li>There is a time limit before which you can request new tokens - this is typically 3 days.</li>
+                  <li>There is a time limit before which you can request new tokens (currently 3 days).</li>
               </ol>
 
               <Link href="/faucet">
