@@ -32,7 +32,7 @@ export default function Home() {
           <img src="/cat_main_150.png" alt="I Can Has Cheezburger?" />
           <div className="ichc-token-info-container">
             <div className="get-ichc-token-container">
-              <h2 className="pink">Get ICHC Token</h2>
+              <h2 className="pink">Get ICHC Token:</h2>
               <div className="get-ichc-buttons">
                 <button 
                   className="uniswap-btn"
