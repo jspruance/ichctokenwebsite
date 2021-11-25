@@ -6,16 +6,20 @@ export default () => {
     <>
       <div className="menu">
         <div className="info-bar">
-          <Link href="/" className="menu-link" >
+          <Link href="/" className="menu-link">
             Home
           </Link>&nbsp;|&nbsp;
           <Link href="/faucet" className="menu-link" >
             Faucet
           </Link>&nbsp;|&nbsp;
-          <Link href="https://etherscan.io/token/0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4" className="menu-link" >
+          <Link 
+            href="https://etherscan.io/token/0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4" 
+            className="menu-link"
+            target="_blank"
+          >
             View on Etherscan
           </Link>&nbsp;|&nbsp;
-          <Link href="/about" className="menu-link" >
+          <Link href="/about" className="menu-link" target="_blank">
             About
           </Link>&nbsp;|&nbsp;
           <span className="contact white">
