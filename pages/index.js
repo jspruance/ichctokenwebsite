@@ -32,12 +32,20 @@ export default function Home() {
           <div className="ichc-token-info-container">
             <div className="get-ichc-token-container">
               <h2 className="pink">Get ICHC Token</h2>
-              <button 
-                className="uniswap-btn"
-                onClick={() => {window.open('https://app.uniswap.org/#/swap?outputCurrency=0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4', '_blank')}}
-              >
-                <span>Buy on Uniswap</span>
-              </button>
+              <div className="get-ichc-buttons">
+                <button 
+                  className="uniswap-btn"
+                  onClick={() => {window.open('https://app.uniswap.org/#/swap?outputCurrency=0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4', '_blank')}}
+                >
+                  <span>Buy on Uniswap</span>
+                </button>
+                <button 
+                  className="faucet-btn"
+                  onClick={() => {}}
+                >
+                  <span>ICHC Faucet</span>
+                </button>
+              </div>
             </div>
             <div className="ichc-token-info">
               <ul>
@@ -124,6 +132,26 @@ export default function Home() {
           cursor: pointer;
           color: #ffffff;
           background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45-white.png"), #FF007A;
+        }
+
+        .faucet-btn {
+          height: 55px;
+          width: 275px;
+          margin-bottom: 1em;
+          font-weight: bold;
+          font-size: 1.1em;
+          font-family: "press_start_2pregular", Times,"Times New Roman", serif;
+          background: top 0px left 5px no-repeat url("/faucet-45.png"), #ffffff;
+        }
+
+        .faucet-btn span {
+          margin-left: 40px;
+        }
+        
+        .faucet-btn:hover {
+          cursor: pointer;
+          color: #ffffff;
+          background: top 0px left 5px no-repeat url("/faucet-45.png"), #007FFF;
         }
 
         a {
