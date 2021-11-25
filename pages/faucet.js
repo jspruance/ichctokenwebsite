@@ -82,7 +82,12 @@ export default function Faucet() {
                 />
               </div> */}
               
-              <button onClick={getICHCHandler} type="button" className="nes-btn is-primary faucet-btn">Get ICHC Token</button>
+              <button 
+                onClick={getICHCHandler} 
+                type="button" 
+                className="nes-btn is-primary faucet-btn">
+                  Get ICHC Tokens
+              </button>
             </div>
           </div>
           {
