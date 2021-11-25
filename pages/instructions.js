@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
-import Link from 'next/link'
 
 export default function Instructions() {
   return (
@@ -31,7 +30,7 @@ export default function Instructions() {
       <main>
         <Header minimal={true} />
         <div className="container">
-          <h2 className="pink">ICHC Token Faucet</h2>
+          <h2 className="pink">ICHC Token Faucet - instructions</h2>
 
           <div className="faucet-instructions">
               <ol>
