@@ -91,7 +91,7 @@ export default function Faucet() {
               </button>
               <div className="instructions">
                 <Link href="/instructions">
-                  <a>Step-by-step instructions</a>
+                  <a>step-by-step instructions</a>
                 </Link>
               </div>
             </div>
@@ -214,6 +214,11 @@ export default function Faucet() {
         .faucet-btn:hover {
           cursor: pointer;
           color: #ffffff;
+        }
+
+        .instructions a {
+          color: white;
+          text-decoration: underline;
         }
 
         a {
