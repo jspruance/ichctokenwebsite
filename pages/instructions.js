@@ -35,7 +35,7 @@ export default function Instructions() {
           <div className="faucet-instructions">
               <ol>
                   <li>Install MetaMask if you do not already have it installed and create a new wallet: <Link href="https://metamask.io/download.html"><a>Install MetaMask</a></Link></li>
-                  <li>When visiting the faucet page you should be automatically prompted to connect to your MetaMask wallet. If not, refresh the page after installing MetaMask.</li>
+                  <li>When visiting the faucet page you should be automatically prompted to connect to your MetaMask wallet. <br />If not, refresh the page after installing MetaMask.</li>
                   <li>Click on the 'Get ICHC Tokens' button</li>
                   <li>You will be prompted to accept the transaction, including any Ethereum gas fees.</li>
                   <li>Once accepted, your new ICHC tokens will be transferred to your MetaMask wallet.</li>
@@ -70,6 +70,11 @@ export default function Instructions() {
         .faucet-instructions {
           margin: 2em 0 0 0;
           color: white;
+          font-size: 1.1em;
+        }
+
+        .faucet-instructions ol {
+            
         }
 
         main {
