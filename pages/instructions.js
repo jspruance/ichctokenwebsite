@@ -116,7 +116,7 @@ export default function Instructions() {
         .faucet-btn {
             height: 55px;
             width: 275px;
-            margin-top: 1em;
+            margin-top: 1.5em;
             margin-left: 1.5em;
             margin-bottom: 1em;
             font-size: .8em;
