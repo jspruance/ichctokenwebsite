@@ -67,8 +67,9 @@ export default function Instructions() {
           margin-bottom: 1em;
         }
 
-        .or {
-          margin: 1em 0;
+        .faucet-instructions {
+          margin: 2em 0 0 0;
+          color: white;
         }
 
         main {
