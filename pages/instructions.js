@@ -42,6 +42,12 @@ export default function Instructions() {
                   <li>Once accepted, your new ICHC tokens will be transferred to your MetaMask wallet.</li>
                   <li>There is a time limit before which you can request new tokens - this is typically 3 days.</li>
               </ol>
+
+              <Link href="/faucet">
+                  <button className="faucet-btn">
+                    <span>ICHC Faucet</span>
+                  </button>
+              </Link>
              
           </div>
           <Menu />
@@ -101,6 +107,27 @@ export default function Instructions() {
           color: inherit;
           text-decoration: none;
         }
+
+        .faucet-btn {
+            height: 55px;
+            width: 275px;
+            margin-left: 1.5em;
+            margin-bottom: 1em;
+            font-weight: bold;
+            font-size: 1.1em;
+            font-family: "press_start_2pregular", Times,"Times New Roman", serif;
+            background: top 0px left 5px no-repeat url("/faucet-45.png"), #ffffff;
+          }
+  
+          .faucet-btn span {
+            margin-left: 40px;
+          }
+          
+          .faucet-btn:hover {
+            cursor: pointer;
+            color: #ffffff;
+            background: top 0px left 5px no-repeat url("/faucet-45.png"), #007FFF;
+          }
 
         .title a {
           color: #0070f3;
