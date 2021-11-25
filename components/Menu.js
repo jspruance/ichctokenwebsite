@@ -37,16 +37,16 @@ export default () => {
       font-size: .6em;
     }
 
-    .menu-link, a  {
+    .menu-link  {
       color: inherit;
       text-decoration: none;
     }
 
-    .menu a:link, .menu .menu-link:link, {
+    .menu .menu-link:link, {
       text-decoration: underline;
     }
 
-    .menu a:hover, .menu .menu-link:hover {
+    .menu .menu-link:hover {
       text-decoration: none;
     }
 
