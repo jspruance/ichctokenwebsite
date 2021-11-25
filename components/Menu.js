@@ -20,7 +20,7 @@ export default () => {
           </Link>&nbsp;|&nbsp;
           <Link href="https://www.instagram.com/ichctoken/">
             <a target="_blank">Instagram</a>
-          </Link>
+          </Link>&nbsp;|&nbsp;
           <span className="contact white">
             <Link href="mailto:crypto@ichctoken.org"><a>crypto@ichctoken.org</a></Link>
           </span>
