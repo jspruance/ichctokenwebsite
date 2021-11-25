@@ -137,7 +137,7 @@ export default function Home() {
         .faucet-btn {
           height: 55px;
           width: 275px;
-          margin-left: 1em;
+          margin-left: 2em;
           margin-bottom: 1em;
           font-weight: bold;
           font-size: 1.1em;
