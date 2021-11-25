@@ -37,7 +37,7 @@ export default function Instructions() {
               <ol>
                   <li>Install MetaMask if you do not already have it installed and create a new wallet: <Link href="https://metamask.io/download.html"><a>Install MetaMask</a></Link></li>
                   <li>When visiting the faucet page you should be automatically prompted to connect to your MetaMask wallet. <br />If not, refresh the page after installing MetaMask.</li>
-                  <li>Click on the 'Get ICHC Tokens' button</li>
+                  <li>Click on the 'Get ICHC Tokens' button.</li>
                   <li>You will be prompted to accept the transaction, including any Ethereum gas fees.</li>
                   <li>Once accepted, your new ICHC tokens will be transferred to your MetaMask wallet.</li>
                   <li>There is a time limit before which you can request new tokens - this is typically 3 days.</li>
