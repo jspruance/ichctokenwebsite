@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -39,12 +40,11 @@ export default function Home() {
                 >
                   <span>Buy on Uniswap</span>
                 </button>
-                <button 
-                  className="faucet-btn"
-                  onClick={() => {}}
-                >
-                  <span>ICHC Faucet</span>
-                </button>
+                <Link href="/faucet">
+                  <button className="faucet-btn">
+                    <span>ICHC Faucet</span>
+                  </button>
+                </Link>
               </div>
             </div>
             <div className="ichc-token-info">
