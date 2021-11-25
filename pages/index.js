@@ -126,7 +126,7 @@ export default function Home() {
           font-weight: bold;
           font-size: 1.1em;
           font-family: "press_start_2pregular", Times,"Times New Roman", serif;
-          background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45.png"), #ffffff;
+          background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45-sprite.png"), #ffffff;
         }
 
         .uniswap-btn span {
@@ -136,7 +136,7 @@ export default function Home() {
         .uniswap-btn:hover {
           cursor: pointer;
           color: #ffffff;
-          background: top 0px left 5px no-repeat url("/uniswap-uni-logo-45-white.png"), #FF007A;
+          background: top 0px left 50px no-repeat url("/uniswap-uni-logo-45-sprite.png"), #FF007A;
         }
 
         .faucet-btn {
