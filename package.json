@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "compile": "solcjs --standard-json --include-path node_modules/ --base-path . ethereum/contracts/Faucet.sol --output-dir ethereum/build"
+    "compilefaucet": "solcjs --abi --include-path node_modules/ --base-path . ethereum/contracts/Faucet.sol --output-dir ethereum/build",
+    "compiletoken": "solcjs --abi --include-path node_modules/ --base-path . ethereum/contracts/ICanHasCheezburgerToken.sol --output-dir ethereum/build"
   },
   "dependencies": {
     "next": "^11.0.0",
