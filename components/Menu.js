@@ -6,24 +6,20 @@ export default () => {
     <>
       <div className="menu">
         <div className="info-bar">
-          <Link href="/" className="menu-link">
-            Home
+          <Link href="/">
+            <a>Home</a>
           </Link>&nbsp;|&nbsp;
-          <Link href="/faucet" className="menu-link" >
-            Faucet
+          <Link href="/faucet">
+            <a>Faucet</a>
           </Link>&nbsp;|&nbsp;
-          <Link 
-            href="https://etherscan.io/token/0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4" 
-            className="menu-link"
-            target="_blank"
-          >
-            View on Etherscan
+          <Link href="https://etherscan.io/token/0xB7813d0F0ff024Feb86F9D3A734d73AF489163A4">
+            <a target="_blank">View on Etherscan</a>
           </Link>&nbsp;|&nbsp;
-          <Link href="/about" className="menu-link" target="_blank">
-            About
+          <Link href="/about">
+            <a>About</a>
           </Link>&nbsp;|&nbsp;
           <span className="contact white">
-            <Link href="mailto:crypto@ichctoken.org" className="menu-link" >crypto@ichctoken.org</Link>
+            <Link href="mailto:crypto@ichctoken.org"><a>crypto@ichctoken.org</a></Link>
           </span>
         </div>
       </div>
@@ -37,16 +33,16 @@ export default () => {
       font-size: .6em;
     }
 
-    .menu-link  {
+    a {
       color: inherit;
       text-decoration: none;
     }
 
-    .menu .menu-link:link, {
+    .menu a:link {
       text-decoration: underline;
     }
 
-    .menu .menu-link:hover {
+    .menu a:hover {
       text-decoration: none;
     }
 
