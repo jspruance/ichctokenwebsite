@@ -25,8 +25,6 @@ export default function Faucet() {
       const accounts = await web3.eth.getAccounts()
       resp = await faucetContract.methods.withdraw().send({
         from: accounts[0],
-        maxPriorityFeePerGas: null,
-        maxFeePerGas: null, 
       })
       setWithdrawSuccess('Operation succeeded - enjoy your tokens!')
       balance = await faucetContract.methods.getBalance().call()
