@@ -31,9 +31,6 @@ export default function Faucet() {
     } catch(err) {
       setWithdrawError(err.message)
     }
-    
-    console.log(`balance :::: ${balance}`)
-    if (resp) console.log(`withdraw resp :::: ${resp}`)
   }
 
   return (
