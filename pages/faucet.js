@@ -26,7 +26,7 @@ export default function Faucet() {
       resp = await faucetContract.methods.withdraw().send({
         from: accounts[0],
         gas: 300000,
-        gasPrice: 100, 
+        gasPrice: null, 
       })
       setWithdrawSuccess('Operation succeeded - enjoy your tokens!')
       balance = await faucetContract.methods.getBalance().call()
