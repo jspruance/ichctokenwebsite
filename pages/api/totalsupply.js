@@ -2,7 +2,7 @@ import tokenContract from '../../ethereum/token'
 
 export default async function handler(req, res) {
   try {
-    const totalSupply = await tokenContract.methods.totalSupply().call()
+    let totalSupply = await tokenContract.methods.totalSupply().call()
     totalSupply = totalSupply.substring(0, totalSupply.length - 18)
     res.status(200).send(totalSupply)
   } catch(err) {
